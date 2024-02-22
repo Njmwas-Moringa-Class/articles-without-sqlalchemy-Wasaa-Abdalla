@@ -1,14 +1,3 @@
-class Magazine:
-    def __init__(self, name):
-        self.name = name  # Change _name to name
-        self.articles = []
-
-class Article:
-    def __init__(self, author, magazine, title):
-        self.author = author.name  # Use author.name
-        self.magazine = magazine.name  # Use magazine.name
-        self.title = title
-        magazine.articles.append(self)
 
 class Author:
     def __init__(self, name):
@@ -33,7 +22,7 @@ class Author:
         return list(set(article.magazine for article in self.magazine.articles))  # Fix this line
 
 # Example usage:
-author = Author("Alpha Likembe")
+author = Author("Wasaa Abdalla")
 
 magazine1 = Magazine("Click click Bang")
 author.add_article(magazine1, "Thug Life")

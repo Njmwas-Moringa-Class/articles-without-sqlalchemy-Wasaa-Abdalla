@@ -1,13 +1,3 @@
-class Author:
-  def __init__(self, name):
-    self._name = name
-
-  def name(self):
-    return self._name
-  
-  def set_name(self, name):
-    self._name = name
-
 
 class Magazine:
   def __init__(self, name, category):    

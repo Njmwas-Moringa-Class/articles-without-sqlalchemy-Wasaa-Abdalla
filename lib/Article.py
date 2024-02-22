@@ -20,18 +20,10 @@ class Article:
     def get_all_articles(cls):
         return cls.all_articles
 
-class Author:
-    def __init__(self, name):
-        self.name = name
-
-class Magazine:
-    def __init__(self, name):
-        self.name = name
-
 
 # Create authors and magazines
-author1 = Author("Alpha Likembe")
-magazine1 = Magazine("Elnino Rains")
+author1 = "Alpha Likembe"
+magazine1 ="Elnino Rains"
 
 # Create articles
 article1 = Article(author1, magazine1, "Government Strategies")
@@ -46,5 +38,5 @@ for article in all_articles:
     print(article.get_title())
 
 
-print(article1.author().name)
-print(article1.magazine().name)
+print(article1.author)
+print(article1.magazine)
